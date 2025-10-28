@@ -224,10 +224,10 @@ header {
         <nav class="desktop">
           <a href="index.html">Home</a>
           <div class="dropdown">
-            <a href="#services">Services ▾</a>
+            <a href="services">Services ▾</a>
             <div class="dropdown-menu">
               <a href="internships.html">Internships</a>
-              <a href="project-management.html">Project Management</a>
+              <a href="projects.html">Project Management</a>
             </div>
           </div>
           <a href="about.html">About Us</a>
@@ -246,24 +246,24 @@ header {
  <!-- Mobile menu -->
 <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
   <nav>
-    <a href="#home" onclick="toggleMobile()">Home</a>
+    <a href="index.html" onclick="toggleMobile()">Home</a>
 
     <!-- Services dropdown -->
     <div class="mobile-dropdown">
       <button class="mobile-dropbtn" onclick="toggleDropdown(event)">Services ▾</button>
       <div class="mobile-dropdown-content">
-        <a href="#internships" onclick="toggleMobile()">Internships</a>
-        <a href="#project-management" onclick="toggleMobile()">Project Management</a>
+        <a href="internships.html" onclick="toggleMobile()">Internships</a>
+        <a href="projects.html" onclick="toggleMobile()">Project Management</a>
       </div>
     </div>
-    <a href="#about" onclick="toggleMobile()">About Us</a>
-    <a href="#faqs" onclick="toggleMobile()">FAQs</a>
-    <a href="#contact" onclick="toggleMobile()">Contact</a>
-      <a href="#internships" onclick="toggleMobile()">Get Started</a>
+    <a href="about.html" onclick="toggleMobile()">About Us</a>
+    <a href="faqs.html" onclick="toggleMobile()">FAQs</a>
+    <a href="contact.html" onclick="toggleMobile()">Contact</a>
+      <a href="internships.html" onclick="toggleMobile()">Get Started</a>
   </nav>
 </div>
 
-  <!-- MAIN CONTENT -->
+  <!-- MAIN CONTENT -->s
   <main>
    
 
@@ -275,7 +275,7 @@ header {
     :root {
       --primary: #00b7ff;
       --secondary: #6c6fa5;
-      --dark-bg: #0b0f19;
+      --dark-bg: #1f2127;
       --card-bg: #131b2e;
       --text-light: #e0e0e0;
       --text-heading: #ffffff;
@@ -313,7 +313,7 @@ header {
 
     .hero h2 span {
       color: var(--primary);
-      text-shadow: 0 0 15px rgba(0,183,255,0.8);
+      
     }
 
     /* Section 2 paragraph */
@@ -507,15 +507,22 @@ header {
     @media (max-width: 850px) {
       .card-testi {
         flex: 0 0 200px;
-        height: 200px;
+        height: 250px;
       }
+      .testimonials h2 {
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 50px;
+      position: relative;
+      z-index: 2;
+    }
     }
   </style>
 </head>
 <body>
 
   <section class="hero">
-    <h1>Unlock Your Potential with <span>Codyin Internships</span></h1>
+    <h1>Unlock Your Potential <br> Codyin Internships</h1>
     <h2><span>Project-Based, Self-Paced Learning for Real-World Success</span></h2>
   </section>
 
@@ -523,7 +530,12 @@ header {
     At Codyin, we empower you to leap into your future with project-based internships that challenge you to apply your skills in real-world scenarios. 
     Our self-paced learning environment allows you to explore and grow at your own rhythm, making your education as flexible as it is rigorous.
   </section>
+   
 
+
+  
+
+  <!-- internship Cards Section -->
   <section class="internships">
     <!-- Card 1 -->
     <div class="card">
@@ -640,6 +652,210 @@ header {
     </div>
   </section>
 
+
+  <!-- ✅ INTERNSHIP INFO SECTION WITH FLOATING GALAXY BACKGROUND -->
+<section class="internship-info" id="details">
+  <canvas id="stars"></canvas>
+  <div class="content">
+    <h2 data-aos="fade-up">What You’ll Gain</h2>
+    <ul data-aos="fade-up" data-aos-delay="100">
+      <li>✅ Internship Offer Letter (within 24 hrs)</li>
+      <li>✅ Weekly Projects, Assignments, Quizzes</li>
+      <li>✅ Completion Certificate from top MNC's</li>
+      <li>✅ Telegram Community Access</li>
+      <li>✅ Mentor Support via WhatsApp & Discord</li>
+      <li>✅ Notes & Resources (PDFs, Templates, Code Snippets)</li>
+    </ul>
+
+    <h2 data-aos="fade-up" data-aos-delay="200">Why Choose Codyin?</h2>
+    <ul data-aos="fade-up" data-aos-delay="300">
+      <li>Over 500+ students already enrolled</li>
+      <li>Certificate recognized by top institutions & recruiters</li>
+      <li>Learn at your own pace — no scheduled classes</li>
+      <li>Ideal for students, working professionals & beginners</li>
+      <li>We provide internship-cum-project for final year's</li>
+    </ul>
+
+    <h2 data-aos="fade-up" data-aos-delay="400">Support Fee Includes</h2>
+    <ul data-aos="fade-up" data-aos-delay="500">
+      <li>Verified Certificate + Validation System</li>
+      <li>Offer Letter + Admin Support</li>
+      <li>Project Access & leading </li>
+      <li>Mentor & Team Support</li>
+    </ul>
+
+    <h2 data-aos="fade-up" data-aos-delay="600">Eligibility</h2>
+    <ul data-aos="fade-up" data-aos-delay="700">
+      <li>Open to all students, freshers ,final year's</li>
+      <li>No coding or previous experience required</li>
+      <li>Just an Internet connection + laptop </li>
+    </ul>
+
+    <h2 data-aos="fade-up" data-aos-delay="800">How to Apply</h2>
+    <ul data-aos="fade-up" data-aos-delay="900">
+      <li>Click the enrollment button below</li>
+      <li>Choose your duration & preferred start date</li>
+      <li>Complete the support fee payment</li>
+      <li>Get your offer letter to your Email within 24 hours!</li>
+    </ul>
+
+    <div class="center-btn" data-aos="zoom-in" data-aos-delay="1000">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-0x6KSLzO1UizcFZOwLtpuCoLpbRrew5fQJuJizurmWzYNA/viewform" 
+         target="_blank" class="apply-btn">Apply Now </a>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ===========================
+   INTERNSHIP INFO SECTION
+   =========================== */
+.internship-info {
+  position: relative;
+  background: radial-gradient(ellipse at bottom, #0b0f1a 0%, #090d18 100%);
+  color: #e2edff;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+/* ✨ Galaxy & Star Canvas */
+#stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: radial-gradient(circle at 50% 20%, rgba(0,183,255,0.1), transparent 70%),
+              radial-gradient(circle at 80% 80%, rgba(108,99,255,0.15), transparent 70%);
+}
+
+.internship-info .content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.internship-info h2 {
+  text-align: center;
+  color: #00b7ff;
+  margin: 40px 0 15px;
+  font-size: 2rem;
+  text-shadow: 0 0 12px rgba(0,183,255,0.5);
+}
+
+.internship-info ul,
+.internship-info ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 40px;
+  max-width: 700px;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.internship-info ul li::before {
+  content: "• ";
+  color: #00b7ff;
+  margin-right: 8px;
+}
+
+.internship-info li,
+.internship-info ol li {
+  background: rgba(255,255,255,0.03);
+  margin: 8px 0;
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.internship-info li:hover {
+  background: rgba(0,183,255,0.1);
+  transform: translateY(-3px);
+}
+
+.center-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.apply-btn {
+  background: linear-gradient(90deg, #00b7ff, #6c63ff);
+  color: #fff;
+  padding: 14px 34px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(0,183,255,0.4);
+  transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+  box-shadow: 0 0 30px rgba(0,183,255,0.6);
+  transform: scale(1.05);
+}
+
+/* 🌠 Responsive */
+@media (max-width: 768px) {
+  .internship-info h2 { font-size: 1.6rem; }
+  .internship-info ul li, .internship-info ol li {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+  .apply-btn {
+    padding: 12px 26px;
+    font-size: 0.95rem;
+  }
+}
+</style>
+
+<script>
+/* 🌌 Floating Stars / Galaxy Particles Animation */
+const canvas = document.getElementById('stars');
+const ctx = canvas.getContext('2d');
+let stars = [];
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = document.querySelector('.internship-info').offsetHeight;
+}
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
+
+for (let i = 0; i < 200; i++) {
+  stars.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    radius: Math.random() * 1.3,
+    alpha: Math.random(),
+    dx: (Math.random() - 0.5) * 0.8,
+    dy: (Math.random() - 0.5) * 0.8
+  });
+}
+
+function drawStars() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = 'white';
+  for (let star of stars) {
+    ctx.globalAlpha = star.alpha;
+    ctx.beginPath();
+    ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+    ctx.fill();
+    star.x += star.dx;
+    star.y += star.dy;
+    if (star.x < 0 || star.x > canvas.width) star.dx *= -1;
+    if (star.y < 0 || star.y > canvas.height) star.dy *= -1;
+    star.alpha += (Math.random() - 0.5) * 0.02;
+    star.alpha = Math.max(0.2, Math.min(1, star.alpha));
+  }
+  requestAnimationFrame(drawStars);
+}
+drawStars();
+</script>
+
+
   <!-- Testimonials -->
   <section class="testimonials">
     <h2>What Our Students Say</h2>
@@ -664,7 +880,7 @@ header {
     const cardWidth = 260;
     const gap = 40;
     let position = 0;
-    const speed = 0.7;
+    const speed = 1;
     let requestId;
 
     function renderCards() {

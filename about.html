@@ -224,7 +224,7 @@ header {
         <nav class="desktop">
           <a href="index.html">Home</a>
           <div class="dropdown">
-            <a href="#services">Services ▾</a>
+            <a href="services">Services ▾</a>
             <div class="dropdown-menu">
               <a href="internships.html">Internships</a>
               <a href="project-management.html">Project Management</a>
@@ -246,20 +246,20 @@ header {
  <!-- Mobile menu -->
 <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
   <nav>
-    <a href="#home" onclick="toggleMobile()">Home</a>
+    <a href="index.html" onclick="toggleMobile()">Home</a>
 
     <!-- Services dropdown -->
     <div class="mobile-dropdown">
       <button class="mobile-dropbtn" onclick="toggleDropdown(event)">Services ▾</button>
       <div class="mobile-dropdown-content">
-        <a href="#internships" onclick="toggleMobile()">Internships</a>
-        <a href="#project-management" onclick="toggleMobile()">Project Management</a>
+        <a href="internships.html" onclick="toggleMobile()">Internships</a>
+        <a href="projects.html" onclick="toggleMobile()">Project Management</a>
       </div>
     </div>
-    <a href="#about" onclick="toggleMobile()">About Us</a>
-    <a href="#faqs" onclick="toggleMobile()">FAQs</a>
-    <a href="#contact" onclick="toggleMobile()">Contact</a>
-      <a href="#internships" onclick="toggleMobile()">Get Started</a>
+    <a href="about.html" onclick="toggleMobile()">About Us</a>
+    <a href="faqs.html" onclick="toggleMobile()">FAQs</a>
+    <a href="contact.html" onclick="toggleMobile()">Contact</a>
+      <a href="internships.html" onclick="toggleMobile()">Get Started</a>
   </nav>
 </div>
 
@@ -519,6 +519,200 @@ header {
       </div>
     </div>
   </section>
+   
+
+  <!-- 🌌 Codyin Growth Stats Section -->
+<section class="growth-section" id="growth">
+  <div class="stars-bg"></div>
+  <div class="growth-content">
+    <div class="growth-text" data-aos="fade-right">
+      <h2>Building Futures, One Intern at a Time</h2>
+      <p>
+        At <strong>Codyin</strong>, we empower learners to transform ideas into
+        real-world projects.  
+        Join a growing community that’s learning, building, and creating
+        future-ready skills for top tech roles.
+      </p>
+    </div>
+
+    <div class="growth-stats" data-aos="fade-left">
+      <div class="stat-box" style="background:#dce4ff;">
+        <h3 class="counter" data-target="24532">0</h3>
+        <p>Code Submissions</p>
+      </div>
+      <div class="stat-box" style="background:#d7f5e9;">
+        <h3 class="counter" data-target="11223">0</h3>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-box" style="background:#ffe7a9;">
+        <h3 class="counter" data-target="15678">0</h3>
+        <p>Interns Trained</p>
+      </div>
+      <div class="stat-box" style="background:#ffd7eb;">
+        <h3 class="counter" data-target="2678">0</h3>
+        <p>Hiring Partners</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Add This CSS Inside <style> -->
+<style>
+.growth-section {
+  position: relative;
+  background: linear-gradient(180deg, #0b0f1a, #0e1b2f);
+  color: #fff;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+.growth-section .stars-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle at 20% 20%, rgba(0,183,255,0.15), transparent 70%),
+              radial-gradient(circle at 80% 80%, rgba(108,99,255,0.15), transparent 70%);
+  animation: moveStars 6s infinite alternate ease-in-out;
+  z-index: 0;
+}
+
+@keyframes moveStars {
+  0% { transform: translateY(0px) scale(1); }
+  100% { transform: translateY(-30px) scale(1.05); }
+}
+
+.growth-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+
+.growth-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.growth-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #00b7ff;
+  text-shadow: 0 0 10px rgba(0,183,255,0.5);
+}
+
+.growth-text p {
+  font-size: 1.1rem;
+  color: #d8e0ff;
+  line-height: 1.7;
+}
+
+.growth-stats {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stat-box {
+  background: rgba(255,255,255,0.1);
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,183,255,0.15);
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0,183,255,0.4);
+}
+
+.stat-box h3 {
+  font-size: 2.2rem;
+  color: #0b0f1a;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stat-box p {
+  color: #222;
+  font-weight: 500;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+  .growth-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .growth-text h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .growth-text h2 {
+    font-size: 1.6rem;
+  }
+  .growth-text p {
+    font-size: 0.95rem;
+  }
+  .growth-stats {
+    grid-template-columns: 1fr 1fr; /* ✅ Keep 2×2 even on mobile */
+    gap: 12px;
+  }
+  .stat-box {
+    padding: 20px 10px;
+  }
+  .stat-box h3 {
+    font-size: 1.6rem;
+  }
+  .stat-box p {
+    font-size: 0.85rem;
+  }
+}
+</style>
+
+<!-- ✅ Counter Animation Script -->
+<script>
+const counters = document.querySelectorAll('.counter');
+let counted = false;
+
+function animateCounter(counter) {
+  const target = +counter.getAttribute('data-target');
+  const speed = 80; 
+  const step = target / speed;
+  let count = 0;
+
+  const update = () => {
+    count += step;
+    if (count < target) {
+      counter.textContent = Math.floor(count);
+      requestAnimationFrame(update);
+    } else {
+      counter.textContent = target.toLocaleString();
+    }
+  };
+  update();
+}
+
+function startCounters() {
+  if (counted) return;
+  const section = document.querySelector('.growth-section');
+  const sectionTop = section.getBoundingClientRect().top;
+  if (sectionTop < window.innerHeight - 100) {
+    counters.forEach(animateCounter);
+    counted = true;
+  }
+}
+
+window.addEventListener('scroll', startCounters);
+</script>
 
   <section class="internship-section">
     <div>
@@ -646,10 +840,10 @@ header {
 
       <div class="footer-links">
         <strong>Quick Links</strong>
-        <a href="#projects">About Us</a>
-        <a href="#projects">Projects</a>
+        <a href="about.html">About Us</a>
+        <a href="projects.html">Projects</a>
         <a href="internships.html">Internships</a>
-        <a href="#faqs">FAQs</a>
+        <a href="faqs.html">FAQs</a>
         <a href="contact.html">Contact</a>
       </div>
 
