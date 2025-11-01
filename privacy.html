@@ -49,135 +49,8 @@
     /* Mobile nav */
     .hamburger{display:none;gap:10px;align-items:center}
     .hamburger button{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:8px;border-radius:8px;color:inherit}
-
-    /* CONTACT PAGE */
-    .contact-section {
-      padding: 120px 20px 60px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .contact-title {
-      text-align: center;
-      font-size: 2.2rem;
-      font-weight: 600;
-      margin-bottom: 40px;
-      color: #00d8ff;
-      text-shadow: 0 0 10px #00d8ff66;
-    }
-    .contact-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: start;
-    }
-    .contact-left {
-      line-height: 1.7;
-      font-size: 15px;
-      opacity: 0.9;
-    }
-    .contact-left h5 {
-      font-weight: 600;
-      color: #00d8ff;
-      margin-bottom: 15px;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: #fff;
-      padding: 12px;
-      border-radius: 8px;
-      margin-bottom: 15px;
-      transition: 0.3s;
-    }
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-      border-color: #00d8ff;
-      outline: none;
-      box-shadow: 0 0 10px #00d8ff44;
-    }
-    .submit-btn {
-      background: var(--accent-grad);
-      border: none;
-      padding: 12px 25px;
-      border-radius: 8px;
-      color: #fff;
-      font-weight: 600;
-      transition: 0.4s;
-      width: 100%;
-    }
-    .submit-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px #00d8ffaa;
-    }
-
-    /* Contact Info */
-    .contact-info {
-      margin-top: 70px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      text-align: center;
-    }
-    .info-box {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-      padding: 25px;
-      transition: 0.3s;
-    }
-    .info-box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 15px #00d8ff44;
-    }
-    .info-box i {
-      font-size: 30px;
-      color: #00d8ff;
-      margin-bottom: 12px;
-    }
-
-    /* FOOTER */
-    footer.footer {
-      padding: 50px 0 20px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
-      color: var(--muted);
-    }
-    .footer-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 40px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .footer-links a {
-      display: block;
-      color: var(--muted);
-      margin-bottom: 8px;
-      text-decoration: none;
-    }
-    .footer-links a:hover {
-      color: #00d8ff;
-    }
-    .divider {
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.03), transparent);
-      margin: 28px 0;
-      border-radius: 2px;
-    }
-    .socials i {
-      font-size: 20px;
-      margin-right: 10px;
-      color: var(--muted);
-      transition: 0.3s;
-    }
-    .socials i:hover {
-      color: #00d8ff;
-    }
-    .text-center {
-      text-align: center;
-    }
-
+    .hamburger button:hover{background:rgba(255,255,255,0.02);border-color:rgba(255,255,255,0.1)}
+    
     /* RESPONSIVE */
     @media (max-width: 900px) {
       .contact-container {
@@ -225,9 +98,7 @@
       .submit-btn {padding:10px 20px;}
       .nav-wrap {margin:0 10px;padding:8px 10px;}
     }
-    /* ===== FIX: Hide mobile menu on desktop & improve navbar clarity ===== */
-
-#mobileMenu {
+    #mobileMenu {
   display: none;              /* Hidden by default */
   position: fixed;
   top: var(--nav-height);
@@ -288,7 +159,54 @@ header {
   display: flex;
 }
 
-/* 🌫️ Help Center Button Style */
+    /* FOOTER */
+    footer.footer {
+      padding: 50px 0 20px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+      color: var(--muted);
+    }
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-links a {
+      display: block;
+      color: var(--muted);
+      margin-bottom: 8px;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      color: #00d8ff;
+    }
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.03), transparent);
+      margin: 28px 0;
+      border-radius: 2px;
+    }
+    .socials i {
+      font-size: 20px;
+      margin-right: 10px;
+      color: var(--muted);
+      transition: 0.3s;
+    }
+    .socials i:hover {
+      color: #00d8ff;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .gradient-text {
+  background: linear-gradient(45deg, #ff0000, #00ff00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .help-btn {
   display: inline-block;
   background: transparent;
@@ -311,6 +229,71 @@ header {
   transform: translateY(-2px);
 }
 
+/* PRIVACY POLICY STYLES */
+.privacy-section {
+  max-width: 1450px;
+  margin: 120px auto 60px;
+  background: var(--panel);
+  padding: 40px 130px;
+  border-radius: var(--radius);
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+.privacy-section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--accent-grad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.privacy-section p {
+  color: var(--muted);
+  font-size: 0.97rem;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.privacy-section h2 {
+  color: var(--accent1);
+  font-size: 1.3rem;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.privacy-section h3 {
+  color: var(--accent1);
+  font-size: 1rem;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.privacy-section ul {
+  margin: 10px 0 10px 20px;
+}
+
+.privacy-section li {
+  color: var(--muted);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .privacy-section {
+    margin: 100px 20px 50px;
+    padding: 28px 20px;
+  }
+  .privacy-section h1 {
+    font-size: 1.6rem;
+  }
+  .privacy-section h2 {
+    font-size: 1.1rem;
+  }
+}
+
+
   </style>
 </head>
 <body>
@@ -332,7 +315,7 @@ header {
             <a href="services">Services ▾</a>
             <div class="dropdown-menu">
               <a href="internships.html">Internships</a>
-              <a href="projects.html">Project Management</a>
+              <a href="project-management.html">Project Management</a>
             </div>
           </div>
           <a href="about.html">About Us</a>
@@ -361,65 +344,103 @@ header {
         <a href="projects.html" onclick="toggleMobile()">Project Management</a>
       </div>
     </div>
-
     <a href="about.html" onclick="toggleMobile()">About Us</a>
     <a href="faqs.html" onclick="toggleMobile()">FAQs</a>
     <a href="contact.html" onclick="toggleMobile()">Contact</a>
       <a href="internships.html" onclick="toggleMobile()">Get Started</a>
   </nav>
 </div>
+<main>
 
-  <!-- MAIN CONTENT -->
-  <main>
-    
-  <!-- CONTACT SECTION -->
-  <section class="contact-section">
-    <h2 class="contact-title">Fill the form below<br>so we can get to know you and your needs better</h2>
+  <section class="privacy-section">
+    <h1>Privacy Policy</h1>
+    <p>Your privacy is important to us at Codyin.</p>
 
-    <div class="contact-container">
-      <div class="contact-left">
-        <h5>Here's what we can help with:</h5>
-        <p><strong>Program & Pricing Details:</strong> Explore our 8-week internship tracks, compare domains (Web, Python, Java, UI/UX, C) and find the plan that fits your goals.</p>
-        <p><strong>Enrollment & Payment Support:</strong> Get step-by-step assistance with your application, payment options, scholarships, and discount codes.</p>
-        <p><strong>Technical & Platform Help:</strong> Trouble accessing your dashboard, submitting projects, or validating certificates? We’re here to resolve it.</p>
-        <p><strong>Partnership & Corporate Training:</strong> Learn how to bring Codyin’s project-based internships to your team or institution.</p>
-        <p><strong>General Questions & Feedback:</strong> Anything else on your mind? Curriculum, timelines, mentor availability—just ask.</p>
-      </div>
+    <div class="privacy-content">
+      <p>This Privacy Policy explains how we collect, use, and protect your information when you use our website, platform, or internship programs (collectively, the “Services”). By using our Services, you agree to this Policy.</p>
 
-      <div>
-        <form class="contact-form">
-          <input type="text" placeholder="*Your Name" required />
-          <input type="email" placeholder="*Email" required />
-          <input type="tel" placeholder="*Phone Number" required />
-          <input type="text" placeholder="*Subject" required />
-          <textarea rows="4" placeholder="*Message" required></textarea>
+      <h2>1. Information We Collect</h2>
+      <h3>1.1 Information You Provide</h3>
+      <ul>
+        <li><b>Account Registration:</b> Name, email address, password, phone number, and optional profile details.</li>
+        <li><b>Application & Enrollment:</b> Educational background, résumé, quiz responses, and payment details.</li>
+        <li><b>Support Requests:</b> Any details shared via chat, email, or contact form.</li>
+      </ul>
 
-          <p style="font-size:13px;opacity:0.8;">By filling out this form and clicking submit, you agree to our <a href="#">*Privacy Policy</a>.</p>
-          <button type="submit" class="submit-btn">Submit</button>
-        </form>
-      </div>
-    </div>
+      <h3>1.2 Information We Automatically Collect</h3>
+      <ul>
+        <li><b>Usage Data:</b> Pages viewed, time spent, clicks, downloads, and course progress.</li>
+        <li><b>Device & Browser Data:</b> IP address, device type, OS, and browser version.</li>
+        <li><b>Cookies:</b> We use cookies to personalize your experience and analyze performance.</li>
+      </ul>
 
-    <div class="contact-info">
-      <div class="info-box">
-        <i class="ri-map-pin-line"></i>
-        <h5>Address</h5>
-        <p>5 Sector B Road, Lucknow, Uttar Pradesh, 226006, India</p>
-      </div>
-      <div class="info-box">
-        <i class="ri-mail-line"></i>
-        <h5>Contact Info</h5>
-        <p>Mail: codyin.services@gmail.com</p>
-      </div>
-      <div class="info-box">
-        <i class="ri-time-line"></i>
-        <h5>Work Hours</h5>
-        <p>Monday - Friday: 10:00AM - 3:00PM<br>Saturday & Sunday: Off</p>
-      </div>
+      <h2>2. How We Use Your Information</h2>
+      <ul>
+        <li>Provide, improve, and maintain our Services.</li>
+        <li>Process enrollments and payments securely.</li>
+        <li>Personalize your learning dashboard and recommend resources.</li>
+        <li>Communicate updates, offers, and support messages.</li>
+        <li>Analyze performance and enhance learning outcomes.</li>
+        <li>Detect and prevent fraud or misuse.</li>
+      </ul>
+
+      <h2>3. Information Sharing & Disclosure</h2>
+      <p>We never sell or rent your personal data. We may share limited information only:</p>
+      <ul>
+        <li><b>With Service Providers:</b> Payment processors, analytics, or hosting partners — under strict confidentiality.</li>
+        <li><b>To Comply with Law:</b> When legally required by government or court orders.</li>
+        <li><b>To Protect Rights:</b> In case of fraud or platform misuse.</li>
+        <li><b>Business Transfers:</b> If our assets are merged or acquired (you will be notified).</li>
+      </ul>
+
+      <h2>4. Cookies & Tracking Technologies</h2>
+      <p>We use cookies to maintain sessions, improve performance, and customize experience.  
+      You may disable cookies in your browser, but some features may not function properly.</p>
+
+      <h2>5. Data Security</h2>
+      <p>We use strong encryption, firewalls, and access controls to protect your data.  
+      However, no online system is 100% secure, so we cannot guarantee absolute protection.</p>
+
+      <h2>6. Data Retention</h2>
+      <p>We retain your data as long as necessary to provide Services and comply with legal requirements.  
+      When no longer needed, data is securely deleted or anonymized.</p>
+
+      <h2>7. Your Rights & Choices</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access your data and request a copy.</li>
+        <li>Request correction or deletion of inaccurate data.</li>
+        <li>Limit or object to data processing for marketing purposes.</li>
+        <li>Contact us anytime to exercise these rights at <b>privacy@motioncut.shop</b>.</li>
+      </ul>
+
+      <h2>8. Children’s Privacy</h2>
+      <p>Our Services are not intended for children under 16.  
+      If we inadvertently collect data from a minor, we will delete it immediately.</p>
+
+      <h2>9. International Transfers</h2>
+      <p>Your data may be stored or processed outside your country, under adequate legal safeguards for protection.</p>
+
+      <h2>10. Third-Party Links</h2>
+      <p>Our site may contain links to other websites. We are not responsible for their content or privacy practices.</p>
+
+      <h2>11. Updates to This Policy</h2>
+      <p>We may update this Privacy Policy periodically.  
+      The latest version will always be available on this page, with a revised “Last Updated” date.</p>
+
+      <h2>12. Contact Us</h2>
+      <p>If you have questions about this Policy, contact us at:</p>
+      <p><b>Email:</b> motioncut@outlook.com</p>
+      <p><b>Address:</b> MotionCut, 123 Tech Park, New Delhi, India</p>
+
+      <p>Thank you for trusting Codyin. We’re committed to transparency and protecting your privacy.</p>
     </div>
   </section>
-  </main>
-  <!-- FOOTER -->
+
+
+
+</main>
+ <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-grid">
       <div>
@@ -429,7 +450,7 @@ header {
             <div><strong style="font-size:14px">CODYIN</strong></div>
           </a>
         </div>
-       <div class="help-center" style="margin-top:10px">
+         <div class="help-center" style="margin-top:10px">
          <a href="contact.html"  class="help-btn">Help center</a>
         </div>
          <h4 style="margin-top:20px" class="muted">Follow Us</h4>

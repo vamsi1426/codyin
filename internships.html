@@ -206,6 +206,29 @@ header {
   background-clip: text;
   color: transparent;
 }
+/* 🌫️ Help Center Button */
+.help-btn {
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+/* 🌫️ Hover effect: grey highlight */
+.help-btn:hover {
+  background: #555;
+  border-color: #777;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(160, 160, 160, 0.5);
+  transform: translateY(-2px);
+}
+
   </style>
   </head>
 <body>
@@ -421,102 +444,7 @@ header {
       box-shadow: 0 0 25px rgba(0,183,255,0.6);
     }
 
-    /* Testimonials Section */
-    .testimonials {
-      background: linear-gradient(180deg, #0f172a, #151f36);
-      padding: 100px 20px;
-      text-align: center;
-      color: #dceaff;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .testimonials::before {
-      content: "";
-      position: absolute;
-      top: -100px;
-      left: -100px;
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle, rgba(0,183,255,0.3) 0%, transparent 80%);
-      filter: blur(90px);
-      z-index: 0;
-    }
-
-    .testimonials h2 {
-      font-size: 2.5rem;
-      color: var(--primary);
-      margin-bottom: 50px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .carousel {
-      overflow: hidden;
-      width: 100%;
-      position: relative;
-    }
-
-    .slides {
-      display: flex;
-      gap: 40px;
-      will-change: transform;
-    }
-
-    .card-testi {
-      flex: 0 0 260px;
-      height: 260px;
-      background: rgba(19, 31, 60, 0.8);
-      border-radius: 50%;
-      padding: 25px 20px;
-      box-shadow: 0 0 25px rgba(0,183,255,0.3);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      user-select: none;
-      transition: transform 0.3s ease;
-      color: #a0cfff;
-    }
-
-    .card-testi:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 40px rgba(0,183,255,0.6);
-    }
-
-    .quote {
-      font-style: italic;
-      font-size: 1rem;
-      margin-bottom: 18px;
-      line-height: 1.5;
-    }
-
-    .author {
-      font-weight: 700;
-      font-size: 1.05rem;
-      color: var(--secondary);
-      margin-bottom: 6px;
-    }
-
-    .role {
-      font-size: 0.85rem;
-      color: #8bb8ff;
-    }
-
-    @media (max-width: 850px) {
-      .card-testi {
-        flex: 0 0 200px;
-        height: 250px;
-      }
-      .testimonials h2 {
-      font-size: 2.2rem;
-      color: var(--primary);
-      margin-bottom: 50px;
-      position: relative;
-      z-index: 2;
-    }
-    }
+    
   </style>
 </head>
 <body>
@@ -701,7 +629,7 @@ header {
 
     <div class="center-btn" data-aos="zoom-in" data-aos-delay="1000">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-0x6KSLzO1UizcFZOwLtpuCoLpbRrew5fQJuJizurmWzYNA/viewform" 
-         target="_blank" class="apply-btn">Apply Now </a>
+         target="_blank" class="apply-btn">Start Your Internship </a>
     </div>
   </div>
 </section>
@@ -856,60 +784,8 @@ drawStars();
 </script>
 
 
-  <!-- Testimonials -->
-  <section class="testimonials">
-    <h2>What Our Students Say</h2>
-    <div class="carousel">
-      <div class="slides" id="slides"></div>
-    </div>
-  </section>
-
-  <script>
-    const stories = [
-      { quote: "Thanks to Codyin, I secured an internship that gave me hands-on experience.", author: "Priya S.", role: "Frontend Intern" },
-      { quote: "Codyin helped me complete an AI-based project successfully.", author: "Rahul K.", role: "AI Developer" },
-      { quote: "Mentorship transformed me into a confident software engineer.", author: "Meera T.", role: "Backend Intern" },
-      { quote: "Working on live projects was a game changer for my skills.", author: "Arjun M.", role: "Mobile App Intern" },
-      { quote: "Finished my Data Science project with Codyin’s help.", author: "Sneha P.", role: "Data Science Intern" },
-      { quote: "Real projects helped me crack interviews easily.", author: "Karan J.", role: "DevOps Intern" },
-      { quote: "Codyin made me industry-ready.", author: "Nisha R.", role: "IoT Developer" },
-      { quote: "Landed my first job thanks to my Codyin portfolio.", author: "Aditi N.", role: "ML Project" },
-    ];
-
-    const slides = document.getElementById('slides');
-    const cardWidth = 260;
-    const gap = 40;
-    let position = 0;
-    const speed = 1;
-    let requestId;
-
-    function renderCards() {
-      slides.innerHTML = '';
-      [...stories, ...stories].forEach(story => {
-        const card = document.createElement('div');
-        card.classList.add('card-testi');
-        card.innerHTML = `
-          <p class="quote">"${story.quote}"</p>
-          <div class="author">- ${story.author}</div>
-          <div class="role">${story.role}</div>
-        `;
-        slides.appendChild(card);
-      });
-    }
-
-    function animate() {
-      position -= speed;
-      const totalWidth = (cardWidth + gap) * stories.length;
-      if (Math.abs(position) >= totalWidth) position = 0;
-      slides.style.transform = `translateX(${position}px)`;
-      requestId = requestAnimationFrame(animate);
-    }
-
-    renderCards();
-    animate();
-    slides.addEventListener('mouseenter', () => cancelAnimationFrame(requestId));
-    slides.addEventListener('mouseleave', () => animate());
-  </script>
+ 
+  
 
 
 
@@ -924,18 +800,17 @@ drawStars();
             <div><strong style="font-size:14px">CODYIN</strong></div>
           </a>
         </div>
-        <div class="muted" style="margin-top:6px">Technologies & AI solutions</div>
-        <div style="margin-top:12px" class="socials">
-          <a href="#"><i class="ri-instagram-line"></i></a>
-          <a href="#"><i class="ri-linkedin-box-line"></i></a>
-          <a href="#"><i class="ri-whatsapp-line"></i></a>
+        <div class="help-center" style="margin-top:10px">
+         <a href="contact.html"  class="help-btn">Help center</a>
         </div>
-        
-        <div>
-         <a href="contact.html">help center</a>
+         <h4 style="margin-top:20px" class="muted">Follow Us</h4>
+        <div style="margin-top:20px" class="socials">
+          <a href="https://www.instagram.com/codyin_official?igsh=MTF4NTQ1NTYyaGJmNw=="><i class="ri-instagram-line"></i></a>
+          <a href="https://www.linkedin.com/company/codyin/"><i class="ri-linkedin-box-line"></i></a>
+          <a href="https://wa.me/918008518191"><i class="ri-whatsapp-line"></i></a>
         </div>
       </div>
-
+            
       <div class="footer-links">
         <strong>Quick Links</strong>
         <a href="#projects">About Us</a>

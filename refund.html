@@ -49,135 +49,8 @@
     /* Mobile nav */
     .hamburger{display:none;gap:10px;align-items:center}
     .hamburger button{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:8px;border-radius:8px;color:inherit}
-
-    /* CONTACT PAGE */
-    .contact-section {
-      padding: 120px 20px 60px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .contact-title {
-      text-align: center;
-      font-size: 2.2rem;
-      font-weight: 600;
-      margin-bottom: 40px;
-      color: #00d8ff;
-      text-shadow: 0 0 10px #00d8ff66;
-    }
-    .contact-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: start;
-    }
-    .contact-left {
-      line-height: 1.7;
-      font-size: 15px;
-      opacity: 0.9;
-    }
-    .contact-left h5 {
-      font-weight: 600;
-      color: #00d8ff;
-      margin-bottom: 15px;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: #fff;
-      padding: 12px;
-      border-radius: 8px;
-      margin-bottom: 15px;
-      transition: 0.3s;
-    }
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-      border-color: #00d8ff;
-      outline: none;
-      box-shadow: 0 0 10px #00d8ff44;
-    }
-    .submit-btn {
-      background: var(--accent-grad);
-      border: none;
-      padding: 12px 25px;
-      border-radius: 8px;
-      color: #fff;
-      font-weight: 600;
-      transition: 0.4s;
-      width: 100%;
-    }
-    .submit-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px #00d8ffaa;
-    }
-
-    /* Contact Info */
-    .contact-info {
-      margin-top: 70px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      text-align: center;
-    }
-    .info-box {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-      padding: 25px;
-      transition: 0.3s;
-    }
-    .info-box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 15px #00d8ff44;
-    }
-    .info-box i {
-      font-size: 30px;
-      color: #00d8ff;
-      margin-bottom: 12px;
-    }
-
-    /* FOOTER */
-    footer.footer {
-      padding: 50px 0 20px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
-      color: var(--muted);
-    }
-    .footer-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 40px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .footer-links a {
-      display: block;
-      color: var(--muted);
-      margin-bottom: 8px;
-      text-decoration: none;
-    }
-    .footer-links a:hover {
-      color: #00d8ff;
-    }
-    .divider {
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.03), transparent);
-      margin: 28px 0;
-      border-radius: 2px;
-    }
-    .socials i {
-      font-size: 20px;
-      margin-right: 10px;
-      color: var(--muted);
-      transition: 0.3s;
-    }
-    .socials i:hover {
-      color: #00d8ff;
-    }
-    .text-center {
-      text-align: center;
-    }
-
+    .hamburger button:hover{background:rgba(255,255,255,0.02);border-color:rgba(255,255,255,0.1)}
+    
     /* RESPONSIVE */
     @media (max-width: 900px) {
       .contact-container {
@@ -225,9 +98,7 @@
       .submit-btn {padding:10px 20px;}
       .nav-wrap {margin:0 10px;padding:8px 10px;}
     }
-    /* ===== FIX: Hide mobile menu on desktop & improve navbar clarity ===== */
-
-#mobileMenu {
+    #mobileMenu {
   display: none;              /* Hidden by default */
   position: fixed;
   top: var(--nav-height);
@@ -288,7 +159,55 @@ header {
   display: flex;
 }
 
-/* 🌫️ Help Center Button Style */
+    /* FOOTER */
+    footer.footer {
+      padding: 50px 0 20px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+      color: var(--muted);
+    }
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-links a {
+      display: block;
+      color: var(--muted);
+      margin-bottom: 8px;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      color: #00d8ff;
+    }
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.03), transparent);
+      margin: 28px 0;
+      border-radius: 2px;
+    }
+    .socials i {
+      font-size: 20px;
+      margin-right: 10px;
+      color: var(--muted);
+      transition: 0.3s;
+    }
+    .socials i:hover {
+      color: #00d8ff;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .gradient-text {
+  background: linear-gradient(45deg, #ff0000, #00ff00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 .help-btn {
   display: inline-block;
   background: transparent;
@@ -311,7 +230,73 @@ header {
   transform: translateY(-2px);
 }
 
-  </style>
+
+/* REFUND POLICY STYLES */
+.refund-section {
+  max-width: 1450px;
+  margin: 120px auto 60px;
+  background: var(--panel);
+  padding: 40px 130px;
+  border-radius: var(--radius);
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+.refund-section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--accent-grad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.refund-section p {
+  color: var(--muted);
+  font-size: 0.97rem;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.refund-section h2 {
+  color: var(--accent1);
+  font-size: 1.3rem;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.refund-section h3 {
+  color: var(--accent1);
+  font-size: 1rem;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.refund-section ul {
+  margin: 10px 0 10px 20px;
+}
+
+.refund-section li {
+  color: var(--muted);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .refund-section {
+    margin: 100px 20px 50px;
+    padding: 28px 20px;
+  }
+  .refund-section h1 {
+    font-size: 1.6rem;
+  }
+  .refund-section h2 {
+    font-size: 1.1rem;
+  }
+}
+
+</style>
 </head>
 <body>
 
@@ -332,7 +317,7 @@ header {
             <a href="services">Services ▾</a>
             <div class="dropdown-menu">
               <a href="internships.html">Internships</a>
-              <a href="projects.html">Project Management</a>
+              <a href="project-management.html">Project Management</a>
             </div>
           </div>
           <a href="about.html">About Us</a>
@@ -361,65 +346,84 @@ header {
         <a href="projects.html" onclick="toggleMobile()">Project Management</a>
       </div>
     </div>
-
     <a href="about.html" onclick="toggleMobile()">About Us</a>
     <a href="faqs.html" onclick="toggleMobile()">FAQs</a>
     <a href="contact.html" onclick="toggleMobile()">Contact</a>
       <a href="internships.html" onclick="toggleMobile()">Get Started</a>
   </nav>
 </div>
+<main>
+ <main>
+    <section class="refund-section">
+      <h1>Refund & Return Policy</h1>
+      <p>This Refund & Cancellation Policy (“Policy”) explains Codyin’s practices regarding refunds, cancellations, and deferrals for our self-paced internship programs. By enrolling in any Codyin program, you agree to the terms below.</p>
 
-  <!-- MAIN CONTENT -->
-  <main>
-    
-  <!-- CONTACT SECTION -->
-  <section class="contact-section">
-    <h2 class="contact-title">Fill the form below<br>so we can get to know you and your needs better</h2>
+      <h2>1. Refund Eligibility</h2>
+      <h3>Pre-Start Full Refund</h3>
+      <p>You may request a 100% refund if you cancel within 7 days of payment and before your cohort’s start date.</p>
 
-    <div class="contact-container">
-      <div class="contact-left">
-        <h5>Here's what we can help with:</h5>
-        <p><strong>Program & Pricing Details:</strong> Explore our 8-week internship tracks, compare domains (Web, Python, Java, UI/UX, C) and find the plan that fits your goals.</p>
-        <p><strong>Enrollment & Payment Support:</strong> Get step-by-step assistance with your application, payment options, scholarships, and discount codes.</p>
-        <p><strong>Technical & Platform Help:</strong> Trouble accessing your dashboard, submitting projects, or validating certificates? We’re here to resolve it.</p>
-        <p><strong>Partnership & Corporate Training:</strong> Learn how to bring Codyin’s project-based internships to your team or institution.</p>
-        <p><strong>General Questions & Feedback:</strong> Anything else on your mind? Curriculum, timelines, mentor availability—just ask.</p>
-      </div>
+      <h3>Week 1 Partial Refund</h3>
+      <p>If you cancel after the start date but within the first week, you are eligible for a 50% refund of your enrollment fee.</p>
 
-      <div>
-        <form class="contact-form">
-          <input type="text" placeholder="*Your Name" required />
-          <input type="email" placeholder="*Email" required />
-          <input type="tel" placeholder="*Phone Number" required />
-          <input type="text" placeholder="*Subject" required />
-          <textarea rows="4" placeholder="*Message" required></textarea>
+      <h3>No Refund After Week 1</h3>
+      <p>Cancellations made after the first week are not eligible for a refund.</p>
 
-          <p style="font-size:13px;opacity:0.8;">By filling out this form and clicking submit, you agree to our <a href="#">*Privacy Policy</a>.</p>
-          <button type="submit" class="submit-btn">Submit</button>
-        </form>
-      </div>
-    </div>
+      <h2>2. Deferral & Transfer Options</h2>
+      <h3>One-Time Deferral</h3>
+      <p>You may defer to the next available cohort at no additional cost if you request before Week 2 begins.</p>
 
-    <div class="contact-info">
-      <div class="info-box">
-        <i class="ri-map-pin-line"></i>
-        <h5>Address</h5>
-        <p>5 Sector B Road, Lucknow, Uttar Pradesh, 226006, India</p>
-      </div>
-      <div class="info-box">
-        <i class="ri-mail-line"></i>
-        <h5>Contact Info</h5>
-        <p>Mail: codyin.services@gmail.com</p>
-      </div>
-      <div class="info-box">
-        <i class="ri-time-line"></i>
-        <h5>Work Hours</h5>
-        <p>Monday - Friday: 10:00AM - 3:00PM<br>Saturday & Sunday: Off</p>
-      </div>
-    </div>
-  </section>
+      <h3>Track Transfers</h3>
+      <p>If you wish to switch learning tracks (e.g., from Python to Web Development) within the first week, contact support. Fee differences will be adjusted on a pro-rata basis.</p>
+
+      <h2>3. Non-Refundable Items</h2>
+      <ul>
+        <li><b>Transaction Fees:</b> Bank or payment-gateway charges are non-refundable.</li>
+        <li><b>Scholarships & Discounts:</b> Refunds are calculated on the net amount paid after discounts or promo codes.</li>
+      </ul>
+
+      <h2>4. How to Request a Refund or Deferral</h2>
+      <h3>Submit a Request:</h3>
+      <ul>
+        <li>Email <b>motioncut@outlook.com</b> with the subject “Refund Request” or “Deferral Request.”</li>
+        <li>Include your name, email, program, cohort start date, and reason for cancellation or deferral.</li>
+      </ul>
+
+      <h3>Acknowledgment:</h3>
+      <p>We will acknowledge your request within one business day.</p>
+
+      <h3>Processing:</h3>
+      <ul>
+        <li>Approved refunds are processed to your original payment method within 7 business days.</li>
+        <li>Banks may take 5–10 business days to reflect the amount.</li>
+        <li>Deferral confirmations are sent via email within 2 business days.</li>
+      </ul>
+
+      <h2>5. Exceptions & Special Circumstances</h2>
+      <ul>
+        <li><b>Medical or Emergency Leave:</b> In case of verified emergencies, we may approve a pro-rata refund or additional deferral at our discretion.</li>
+        <li><b>Program Cancellation:</b> If Codyin cancels a program, you will receive a 100% refund or free transfer to another cohort.</li>
+      </ul>
+
+      <h2>6. Changes to This Policy</h2>
+      <p>Codyin may revise this Policy periodically. Any updates will be reflected with a new “Effective Date.” Continued enrollment after updates constitutes acceptance of the new terms.</p>
+
+      <h2>7. Contact Information</h2>
+      <p>If you have any questions or need help, contact us at:</p>
+      <p><b>Email:</b> motioncut@outlook.com<br>
+         <b>Address:</b> Codyin, 123 Tech Park, New Delhi, India</p>
+
+      <p>Thank you for learning with Codyin — we’re committed to supporting your journey, even when plans change.</p>
+    </section>
   </main>
-  <!-- FOOTER -->
+
+
+
+
+</main>
+
+
+
+ <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-grid">
       <div>
@@ -429,7 +433,7 @@ header {
             <div><strong style="font-size:14px">CODYIN</strong></div>
           </a>
         </div>
-       <div class="help-center" style="margin-top:10px">
+         <div class="help-center" style="margin-top:10px">
          <a href="contact.html"  class="help-btn">Help center</a>
         </div>
          <h4 style="margin-top:20px" class="muted">Follow Us</h4>
