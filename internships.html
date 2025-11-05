@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Codyin</title>
+  <title>Contact| Internships </title>
+   <!-- Favicon (Tab Icon) -->
+  <link rel="icon" type="image/png" href="logo.png" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
@@ -432,7 +434,7 @@ header {
           <a href="about.html">About Us</a>
           <a href="faqs.html">FAQs</a>
           <a href="contact.html">Contact</a>
-          <a class="cta" href="internships.html">Get Started</a>
+          
         </nav>
 
         <div class="hamburger">
@@ -458,7 +460,6 @@ header {
     <a href="about.html" onclick="toggleMobile()">About Us</a>
     <a href="faqs.html" onclick="toggleMobile()">FAQs</a>
     <a href="contact.html" onclick="toggleMobile()">Contact</a>
-      <a href="internships.html" onclick="toggleMobile()">Get Started</a>
   </nav>
 </div>
 
@@ -467,9 +468,6 @@ header {
    
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Codyin Internships</title>
   <style>
     :root {
       --primary: #00b7ff;
@@ -598,7 +596,7 @@ body {
       border: none;
       border-radius: 30px;
       font-size: 1rem;
-      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      background: linear-gradient(90deg, var(--primary), var(--primary));
       color: #fff;
       cursor: pointer;
       text-decoration: none;
@@ -668,151 +666,253 @@ body {
   </style>
 </head>
 <body>
-<!-- ✅ CODYIN INTERNSHIPS HERO SECTION (FULLY ISOLATED) -->
+<!-- ✅ CODYIN INTERNSHIP HERO (CENTER HEADING + 3D HOLOGRAM EFFECT) -->
 <section class="internship-hero">
+  <div class="hero-overlay"></div>
+
+  <!-- Floating particles -->
+  <div class="particles">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
   <div class="internship-hero-content">
-    <h1><span>Empower Your Future with Codyin Internships</h1>
-    <h2>Hands-on, <span>AI-Driven Learning</span> to Build Real-World Skills</h2>
-    <p>Step into a world of innovation. Learn, create, and grow through immersive, project-based internships — guided by experts and powered by technology.</p>
-    <a href="#internships" class="internship-btn">Explore Internships</a>
+    <!-- Center Headings -->
+    <div class="hero-heading" data-aos="fade-down">
+      <h1><span>Empower Your Future</span> with Codyin Internships</h1>
+      <h2>Hands-on, <span>AI-Driven Learning</span> to Build Real-World Skills</h2>
+    </div>
+
+    <!-- Left Paragraph + Right Image -->
+    <div class="hero-flex">
+      <div class="hero-left" data-aos="fade-right">
+        <p>
+          Codyin provides <strong>industry-level internship programs</strong> designed to turn learners into professionals.  
+          Work on <strong>real-world projects</strong> guided by experienced mentors, build a strong <strong>portfolio</strong>,  
+          and gain <strong>certified experience</strong> that boosts your career.  
+          With Codyin, you’ll develop <strong>in-demand skills</strong>, enhance confidence, and open doors to top recruiters —  
+          all through an <strong>AI-powered, hands-on internship experience</strong>.
+        </p>
+        <a href="#internships" class="internship-btn">Explore Internships</a>
+      </div>
+
+      <div class="hero-right" data-aos="fade-left">
+        <div class="holo-bg"></div>
+        <img src="internhero.jpg" alt="AI Internship 3D" />
+      </div>
+    </div>
   </div>
 </section>
 
 <style>
-  /* ---------- CODYIN INTERNSHIP HERO THEME VARIABLES ---------- */
-  :root {
-    --intern-bg-dark: #000814;
-    --intern-primary: #00B4FF;
-    --intern-secondary: #007BFF;
-    --intern-text-light: #E0E6FF;
-    --intern-text-muted: #A5B5D6;
-    --intern-gradient: linear-gradient(135deg, #00B4FF, #007BFF);
-  }
-
-  /* ---------- INTERNSHIP HERO SECTION ---------- */
-  .internship-hero {
-    background: radial-gradient(circle at top, rgba(0,180,255,0.15), transparent 80%),
-                linear-gradient(135deg, var(--intern-bg-dark), #08152a 90%);
-    text-align: center;
-    padding: 120px 20px 160px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .internship-hero::before {
-    content: "";
-    position: absolute;
-    top: -100px;
-    left: -100px;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(0,180,255,0.25), transparent 70%);
-    filter: blur(60px);
-    animation: internFloat 6s ease-in-out infinite alternate;
-  }
-
-  @keyframes internFloat {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(50px, 30px); }
-  }
-
-  .internship-hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 850px;
-    margin: 0 auto;
-  }
-
-  .internship-hero h1 {
-    font-size: 2.8rem;
-    line-height: 1.3;
-    font-weight: 700;
-    color: var(--intern-text-light);
-  }
-
-  .internship-hero h1 span {
-    background: var(--intern-gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .internship-hero h2 {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: var(--intern-text-muted);
-    margin-top: 15px;
-  }
-
-  .internship-hero h2 span {
-    color: var(--intern-primary);
-    font-weight: 500;
-  }
-
-  .internship-hero p {
-    font-size: 1rem;
-    color: #B0C4FF;
-    margin-top: 20px;
-    line-height: 1.7;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .internship-btn {
-    display: inline-block;
-    margin-top: 35px;
-    padding: 14px 36px;
-    font-size: 1rem;
-    color: #fff;
-    border: none;
-    background: var(--intern-gradient);
-    border-radius: 30px;
-    box-shadow: 0 0 15px rgba(0,180,255,0.4);
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-
-  .internship-btn:hover {
-    box-shadow: 0 0 25px rgba(0,180,255,0.6);
-    transform: translateY(-3px);
-  }
-
-  /* ---------- RESPONSIVE DESIGN ---------- */
-  @media (max-width: 768px) {
-    .internship-hero {
-      padding: 100px 20px 120px;
-    }
-    .internship-hero h1 {
-      font-size: 2rem;
-    }
-    .internship-hero h2 {
-      font-size: 1.1rem;
-    }
-    .internship-hero p {
-      font-size: 0.95rem;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .internship-hero h1 {
-      font-size: 1.7rem;
-    }
-    .internship-hero h2 {
-      font-size: 1rem;
-    }
-    .internship-btn {
-      padding: 12px 28px;
-      font-size: 0.9rem;
-    }
-  }
-
-  html {
-  scroll-behavior: smooth;
+/* ====================== BASE COLORS ====================== */
+:root {
+  --blue1: #00b4ff;
+  --blue2: #007bff;
+  --purple: #6c63ff;
+  --dark-bg: #010b19;
+  --text-light: #e0e6ff;
+  --text-muted: #a5b5d6;
+  --grad: linear-gradient(135deg, var(--blue1), var(--purple));
 }
 
+/* ====================== HERO SECTION ====================== */
+.internship-hero {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 30%, rgba(0,180,255,0.15), transparent 50%),
+              linear-gradient(160deg, #000814 10%, #02122b 45%, #000814 90%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 8%;
+}
+
+/* Glowing overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 85% 20%, rgba(0,123,255,0.12), transparent 60%),
+              radial-gradient(circle at 10% 80%, rgba(108,99,255,0.15), transparent 60%);
+  z-index: 0;
+}
+
+/* Floating glow particles */
+.particles span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--blue1);
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: floatUp 10s linear infinite;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+}
+.particles span:nth-child(1){ left:10%; animation-delay:0s;}
+.particles span:nth-child(2){ left:40%; animation-delay:2s;}
+.particles span:nth-child(3){ left:70%; animation-delay:4s;}
+.particles span:nth-child(4){ left:85%; animation-delay:6s;}
+.particles span:nth-child(5){ left:55%; animation-delay:8s;}
+
+/* ====================== CONTENT ====================== */
+.internship-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  color: var(--text-light);
+}
+
+/* ---------- CENTER HEADING ---------- */
+.hero-heading h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.hero-heading h1 span {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-heading h2 {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: var(--text-muted);
+  margin-bottom: 60px;
+}
+
+.hero-heading h2 span {
+  color: var(--blue1);
+  font-weight: 600;
+}
+
+/* ---------- FLEX ROW (TEXT LEFT / IMAGE RIGHT) ---------- */
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* LEFT SIDE */
+.hero-left {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-left p {
+  font-size: 1.05rem;
+  color: #c8d4ff;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.internship-btn {
+  display: inline-block;
+  padding: 14px 38px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  background: var(--grad);
+  box-shadow: 0 0 25px rgba(0,180,255,0.3);
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.internship-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 0 35px rgba(0,180,255,0.5);
+}
+
+/* RIGHT SIDE */
+.hero-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Holographic background behind 3D image */
+.holo-bg {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,180,255,0.3), transparent 70%);
+  filter: blur(40px);
+  animation: glowPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes glowPulse {
+  0% { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(1.2); opacity: 0.9; }
+}
+
+/* 3D Image */
+.hero-right img {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  animation: floatImage 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(0,180,255,0.25));
+}
+
+@keyframes floatImage {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* ====================== RESPONSIVE ====================== */
+@media (max-width: 992px) {
+  .hero-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-left {
+    text-align: center;
+  }
+  .hero-right img {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .internship-hero {
+    padding: 100px 5%;
+  }
+  .hero-heading h1 {
+    font-size: 1.5rem;
+  }
+  .hero-heading h2 {
+    font-size: 1rem;
+  }
+  .hero-left p {
+    font-size: 0.95rem;
+  }
+  .hero-right img {
+    max-width: 300px;
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
 </style>
+
 
 
 
