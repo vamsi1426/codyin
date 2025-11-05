@@ -9,6 +9,36 @@
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ✅ SEO META TAGS — About Us Page -->
+<meta name="title" content="About Codyin – Mission, Vision & Team | Online Internships Platform">
+<meta name="description" content="Learn about Codyin – our mission to empower students, our team, values, and how we deliver online internships & live projects with world-class mentoring and certification.">
+<meta name="keywords" content="about Codyin, mission online internships, student internship platform India, tech mentorship team, company profile Codyin">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yourdomain.com/about.html">
+<meta property="og:title" content="About Codyin – Empowering Students Through Internships">
+<meta property="og:description" content="Discover how Codyin empowers students with online internships, live projects and certification – meet our team and see our vision for student success.">
+<meta property="og:image" content="https://yourdomain.com/preview-about.jpg">
+<meta property="og:url" content="https://yourdomain.com/about.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About Codyin – Online Internships Platform">
+<meta name="twitter:description" content="Find out about Codyin, our story, mission, team and how we support students with internships and live projects to build skills and careers.">
+<meta name="twitter:image" content="https://yourdomain.com/preview-about.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Codyin",
+  "url": "https://yourdomain.com",
+  "logo": "https://yourdomain.com/logo.png",
+  "sameAs": [
+    "https://www.instagram.com/codyin_official",
+    "https://www.linkedin.com/company/codyin/"
+  ]
+}
+</script>
+<script type="application/ld+json" src="schema-data.json"></script>
+
   <style>
   
    
@@ -516,49 +546,130 @@ header {
     }
 
     /* Hero Section */
-    .hero {
+     /* Hero Section */
+.hero {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
 
-      text-align: center;
-      padding-top: 100px;
-      padding-bottom: 10px;
-    }
+.hero h1 {
+  font-size: 2rem;
+  background: var(--accent-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-    .hero h1 {
-      font-size: 2rem;
-      background: var(--accent-grad);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+.hero h2 {
+  font-size: 1.8rem;
+  color: #00B4FF;
+  text-shadow: 0 0 20px #00B4FF77;
+  margin-top: 10px;
+}
 
-    .hero h2 {
-      font-size: 1.8rem;
-      color: #00B4FF;
-      text-shadow: 0 0 20px #00B4FF77;
-      margin-top: 10px;
-    }
+/* ========== RESPONSIVE DESIGN ========== */
 
-    /* Rows with alternating layout */
-    .row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-      margin-bottom: 100px;
-    }
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 8px;
+  }
 
-    .box {
-      background: rgba(255,255,255,0.03);
-      border-radius: var(--radius);
-      padding: 30px;
-      box-shadow: 0 0 25px rgba(0,180,255,0.1);
-      line-height: 1.7;
-      transition: 0.3s;
-    }
-    .box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 30px rgba(0,180,255,0.2);
-    }
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 70px;
+    padding-bottom: 8px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Rows with alternating layout */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.box {
+  background: rgba(255,255,255,0.03);
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: 0 0 25px rgba(0,180,255,0.1);
+  line-height: 1.7;
+  transition: 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0,180,255,0.2);
+}
+
+/* ========== RESPONSIVE DESIGN FOR ROWS & BOXES ========== */
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+
+  .box {
+    padding: 25px;
+  }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .box {
+    padding: 22px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+/* Small mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+
+  .box {
+    padding: 18px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
 
     .ai-animation {
       display: flex;
@@ -911,7 +1022,7 @@ window.addEventListener('scroll', startCounters);
       <ul>
         <li>Receive verified certificates.</li>
         <li>100% online and flexible internships.</li>
-        <li>Choose your pace: 4 to 12 Weeks.</li>
+        <li>Choose your pace: 4 to 8 Weeks.</li>
         <li>Build real-world experience.</li>
         <li>No live classes required.</li>
         <li>Self-Paced learning.</li>
@@ -1013,7 +1124,7 @@ window.addEventListener('scroll', startCounters);
         <div class="brand">
           <a class="logo-btn" href="index.html">
             <div class="logo-img"><img src="logo.png" alt="Codyin logo" style="width:100%;height:100%;object-fit:contain"></div>
-            <div><strong style="font-size:14px">CODYIN</strong></div>
+            <div><strong style="font-family: 'Volkhov';font-size:14px">CODYIN</strong></div>
           </a>
         </div>
          <div class="help-center" style="margin-top:10px">

@@ -1,0 +1,85 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://codyin.in/#organization",
+      "name": "Codyin",
+      "url": "https://codyin.in",
+      "logo": "https://codyin.in/logo.png",
+      "description": "Codyin is an AI-powered virtual internship and project platform offering hands-on, real-world learning experiences in Python, Java, Web Development, and UI/UX.",
+      "sameAs": [
+        "https://www.instagram.com/codyin_official",
+        "https://www.linkedin.com/company/codyin/",
+        "https://wa.me/918008518191"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "codyin.services@gmail.com",
+        "availableLanguage": ["English"]
+      }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://codyin.in/#website",
+      "url": "https://codyin.in",
+      "name": "Codyin Official Website",
+      "description": "Learn and grow with AI-powered online internships and live projects. Get certified and gain industry-ready skills with Codyin.",
+      "publisher": { "@id": "https://codyin.in/#organization" },
+      "inLanguage": "en"
+    },
+
+    {
+      "@type": "EducationalOccupationalProgram",
+      "@id": "https://codyin.in/internships.html#program",
+      "name": "Codyin Online Internship Program",
+      "provider": { "@id": "https://codyin.in/#organization" },
+      "hasCourse": [
+        { "@type": "Course", "name": "Python Development Internship" },
+        { "@type": "Course", "name": "Web Development Internship" },
+        { "@type": "Course", "name": "Java Development Internship" },
+        { "@type": "Course", "name": "Frontend Development Internship" },
+        { "@type": "Course", "name": "UI/UX Design Internship" },
+        { "@type": "Course", "name": "C Programming Internship" }
+      ],
+      "educationalCredentialAwarded": "Certificate of Completion",
+      "timeOfDay": "Flexible",
+      "providerMobility": "Online",
+      "occupationalCategory": ["Software Development", "Design", "AI"],
+      "url": "https://codyin.in/internships.html"
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://codyin.in/faqs.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the Codyin internship certified?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Every internship includes a verified Certificate of Completion issued by Codyin, recognized by industry professionals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the internships paid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Codyin internships are training-focused and self-paced. You’ll gain project-based experience and certification to enhance your employability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I apply for an internship?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Visit the internships page, choose your preferred program, and fill out the enrollment form. You’ll receive your offer letter via email within 24 hours."
+          }
+        }
+      ]
+    }
+  ]
+}

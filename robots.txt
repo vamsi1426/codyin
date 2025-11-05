@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block admin or private sections if you add any later
+Disallow: /admin/
+Disallow: /backend/
+
+# Sitemap location (make sure this URL matches your live domain)
+Sitemap: https://codyin.in/sitemap.xml
+

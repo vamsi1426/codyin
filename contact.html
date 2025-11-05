@@ -8,6 +8,36 @@
 <link rel="icon" type="image/png" href="logo.png" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ✅ SEO META TAGS — Contact Page -->
+<meta name="title" content="Contact Codyin | Get in Touch for Online Internships & Live Projects">
+<meta name="description" content="Reach out to Codyin to enquire about online internships, live projects, certificates, mentor support or any other question. We’re here to help students succeed.">
+<meta name="keywords" content="contact Codyin, internship enquiry India, live project support, student internship help, reach Codyin team">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yourdomain.com/contact.html">
+<meta property="og:title" content="Contact Codyin – Internship & Live Projects Platform">
+<meta property="og:description" content="Have questions about online internships or live projects by Codyin? Contact our team today and get the details you need to start your career journey.">
+<meta property="og:image" content="https://yourdomain.com/preview-contact.jpg">
+<meta property="og:url" content="https://yourdomain.com/contact.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact Codyin | Online Internships Support">
+<meta name="twitter:description" content="Get in touch with Codyin for student internships, live projects, certificates, mentors, and career-boosting tech programmes.">
+<meta name="twitter:image" content="https://yourdomain.com/preview-contact.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "url": "https://yourdomain.com/contact.html",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-8008518191",
+    "contactType": "customer support",
+    "email": "codyin.services@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json" src="schema-data.json"></script>
+
   <style>
 
 
@@ -348,37 +378,14 @@
   }
   .consent-row label {
     font-size: 0.9rem;
-    line-height: 1;
+    line-height: 1.5;
   }
 }
 
 
 
     /* Contact Info */
-    .contact-info {
-      margin-top: 70px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      text-align: center;
-    }
-    .info-box {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-      padding: 25px;
-      transition: 0.3s;
-    }
-    .info-box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 15px #00d8ff44;
-    }
-    .info-box i {
-      font-size: 30px;
-      color: #00d8ff;
-      margin-bottom: 12px;
-    }
-    
-    
+     
 
     /* FOOTER */
     footer.footer {
@@ -672,26 +679,156 @@ header {
   </form>
 </div>
 </div>
+</section>
+<!-- ==================== CODYIN SUPPORT SECTION ==================== -->
+<section class="support-section">
+  <div class="container">
+   
+    <div class="support-grid">
+      
+      <div class="info-box" data-aos="fade-up" data-aos-delay="100">
+        <i class="ri-customer-service-2-line"></i>
+        <h5>Quick Response</h5>
+        <p>We respond to all your inquiries <strong>within 24 hours</strong></p>
+      </div>
 
-    <div class="contact-info">
-      <div class="info-box">
-        <i class="ri-map-pin-line"></i>
-        <h5>Address</h5>
-        <p>chennai, India</p>
+      <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+        <i class="ri-user-star-line"></i>
+        <h5>Expert Support</h5>
+        <p>Get help from our <strong>Mentor team & MNC Experts </strong></p>
       </div>
-      <div class="info-box">
-        <i class="ri-mail-line"></i>
-        <h5>Contact Info</h5>
-        <p>✆  +91 8008518191</p>
-        <p>✉:codyin.services@gmail.com</p>
-      </div>
-      <div class="info-box">
+
+      <div class="info-box" data-aos="fade-up" data-aos-delay="300">
         <i class="ri-time-line"></i>
-        <h5>Work Hours</h5>
-        <p>Monday - Friday: 10:00AM - 4:00PM<br>Saturday & Sunday: Off</p>
+        <h5>24/7 Available</h5>
+        <p>Round-the-clock <strong>support for urgent requirements</strong></p>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- ✅ Add this script if not already present -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+
+<style>
+/* ==================== SUPPORT SECTION ==================== */
+.support-section {
+  background: linear-gradient(160deg, #0b0c10 20%, #0f1721 100%);
+  color: #e2edff;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.support-section h2 {
+  font-size: 2rem;
+  margin-bottom: 60px;
+  font-weight: 700;
+  text-shadow: 0 0 20px rgba(0,180,255,0.2);
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  align-items: stretch;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0,180,255,0.08);
+  transition: all 0.4s ease;
+  max-width: 360px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.info-box i {
+  font-size: 2.5rem;
+  color: #00B4FF;
+  margin-bottom: 14px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.info-box h5 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.info-box p {
+  font-size: 0.95rem;
+  color: #a8b9d9;
+  line-height: 1.7;
+}
+
+.info-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 35px rgba(0,180,255,0.25);
+  border-color: rgba(0,180,255,0.3);
+}
+
+.info-box:hover i {
+  color: #6C63FF;
+  transform: scale(1.1);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 992px) {
+  .support-section {
+    padding: 80px 15px;
+  }
+  .support-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .support-section {
+    padding: 70px 10px;
+  }
+  .support-section h2 {
+    font-size: 1.6rem;
+  }
+  .info-box {
+    padding: 28px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .support-section {
+    padding: 60px 10px;
+  }
+  .support-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+  }
+  .info-box {
+    padding: 25px 18px;
+  }
+  .info-box i {
+    font-size: 1.8rem;
+  }
+  .info-box h5 {
+    font-size: 1.05rem;
+  }
+  .info-box p {
+    font-size: 0.9rem;
+  }
+}
+</style>
+
+
   </main>
   <!-- FOOTER -->
   <footer class="footer">
@@ -700,7 +837,7 @@ header {
         <div class="brand">
           <a class="logo-btn" href="index.html">
             <div class="logo-img"><img src="logo.png" alt="Codyin logo" style="width:100%;height:100%;object-fit:contain"></div>
-            <div><strong style="font-size:14px">CODYIN</strong></div>
+            <div><strong style="font-family: 'Volkhov';font-size:14px">CODYIN</strong></div>
           </a>
         </div>
        <div class="help-center" style="margin-top:10px">
